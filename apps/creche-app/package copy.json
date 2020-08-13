@@ -5,7 +5,7 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
-    "build": "next build",
+    "build": "nx build",
     "build:creche-app": "nx build creche-app",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
