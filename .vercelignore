@@ -1,0 +1,4 @@
+dist
+tmp
+*.spec.tsx
+*.spec.js
