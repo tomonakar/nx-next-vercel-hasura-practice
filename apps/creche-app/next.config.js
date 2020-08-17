@@ -17,4 +17,5 @@ module.exports = {
     SESSION_COOKIE_LIFETIME: 7200, // 2 hours
     APP_HOST: process.env.DOMAIN,
   },
+  target: 'serverless',
 }
