@@ -34,7 +34,7 @@ const TodoPrivateList = props => {
 
   let filteredTodos = todos
   if (state.filter === "active") {
-    filteredTodos = todo.filter(todo => todo.is_completed !== true)
+    filteredTodos = todos.filter(todo => todo.is_completed !== true)
   } else if (state.filter === "completed") {
     filteredTodos = todos.filter(todo => todo.is_completed === true);
   }
