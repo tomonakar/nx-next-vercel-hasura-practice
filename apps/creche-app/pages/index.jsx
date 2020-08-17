@@ -5,7 +5,8 @@ import TodoPrivateWrapper from "../components/Todo/TodoPrivateWrapper";
 import TodoPublicWrapper from "../components/Todo/TodoPublicWrapper";
 import OnlineUsersWrapper from "../components/OnlineUsers/OnlineUsersWrapper";
 
-import { useFetchUser } from '../../../libs/user'
+import { useFetchUser } from '../libs/user'
+import { withApollo } from '../libs/withApollo'
 
 const IndexPage = () => { 
   const { user, loading } = useFetchUser()
@@ -37,4 +38,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default withApollo()(IndexPage)
