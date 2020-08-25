@@ -11,6 +11,7 @@ import { withApollo } from '../libs/withApollo'
 const IndexPage = () => { 
   const { user, loading } = useFetchUser()
   if(loading) {
+    console.log('test')
     return <div>Loading...</div>
   }
   if (!loading && !user) {
